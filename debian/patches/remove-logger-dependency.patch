@@ -1,0 +1,19 @@
+Subject: Remove unused logger dependency
+ The logger package is sparsely documented, lacks an explicit license (making
+ it non-free), and is not used anywhere in the source.
+Author: James Lu <bitflip3@gmail.com>
+Forwarded: not-needed
+Last-Update: 2017-03-13
+Index: python-cloudflare/setup.py
+===================================================================
+--- python-cloudflare.orig/setup.py	2017-03-13 00:15:02.281620494 -0700
++++ python-cloudflare/setup.py	2017-03-13 00:16:08.048260929 -0700
+@@ -35,7 +35,7 @@
+         #package_data={'cloudflare-examples': ["examples/*"]},
+         include_package_data=True,
+         #data_files = [('man/man1', ['cli4/cli4.man'])],
+-        install_requires=['requests', 'logger', 'future', 'pyyaml'],
++        install_requires=['requests', 'future', 'pyyaml'],
+         keywords='cloudflare',
+         entry_points={
+             'console_scripts': [

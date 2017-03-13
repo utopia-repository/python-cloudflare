@@ -1,0 +1,29 @@
+Subject: Don't install examples as a package
+ These are provided in a separate python-cloudflare-doc package.
+Author: James Lu <bitflip3@gmail.com>
+Forwarded: not-needed
+Last-Update: 2017-03-13
+
+Index: python-cloudflare/setup.py
+===================================================================
+--- python-cloudflare.orig/setup.py	2017-03-13 00:13:05.576016472 -0700
++++ python-cloudflare/setup.py	2017-03-13 00:15:02.281620494 -0700
+@@ -15,6 +15,9 @@
+     with open('CloudFlare/__init__.py', 'r') as f:
+         version = _version_re.search(f.read()).group(1)
+ 
++    packages = ['cli4']+find_packages()
++    packages.remove('examples')
++
+     setup(
+         name='cloudflare',
+         version=version,
+@@ -26,7 +29,7 @@
+         # maintainer_email='martin@cloudflare.com',
+         url='https://github.com/cloudflare/python-cloudflare',
+         license='MIT',
+-        packages=['cli4', 'examples']+find_packages(),
++        packages=packages,
+         #package_dir={'CloudFlare': 'lib'}
+         #package_dir={'CloudFlare/examples': 'examples'},
+         #package_data={'cloudflare-examples': ["examples/*"]},
