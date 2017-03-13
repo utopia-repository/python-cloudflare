@@ -52,3 +52,8 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Debian packaging stuff
+.pc/
+.pybuild/
+debian/cli4-python2/
