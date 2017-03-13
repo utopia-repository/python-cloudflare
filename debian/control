@@ -1,0 +1,51 @@
+Source: python-cloudflare
+Section: python
+Priority: optional
+Maintainer: James Lu <bitflip3@gmail.com>
+Build-Depends: debhelper (>= 9), dh-python, python-all, python-setuptools, python3-all, python3-setuptools
+Standards-Version: 3.9.8
+Homepage: https://github.com/cloudflare/python-cloudflare
+X-Python-Version: >= 2.6
+X-Python3-Version: >= 3.2
+Vcs-Git: https://github.com/utopia-repository/python-cloudflare
+Vcs-Browser: https://github.com/utopia-repository/python-cloudflare
+#Testsuite: autopkgtest-pkg-python
+
+Package: python-cloudflare
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}
+Suggests: python-cloudflare-doc
+Description: Python wrapper for the Cloudflare API v4 (Python 2)
+ python-cloudflare is a Python wrapper providing full access to the CloudFlare
+ v4 API.
+ .
+ This package installs the library for Python 2.
+
+Package: python3-cloudflare
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Suggests: python-cloudflare-doc
+Description: Python wrapper for the Cloudflare API v4 (Python 3)
+ python-cloudflare is a Python wrapper providing full access to the CloudFlare
+ v4 API.
+ .
+ This package installs the library for Python 3.
+
+Package: cli4
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}, python3, python3-cloudflare
+Description: Command line frontend to the Cloudflare API v4 (Python 3)
+ cli4 is a command line frontend to python-cloudflare, providing full access
+ to the CloudFlare v4 API.
+ .
+ This package installs cli4 using Python 3 libraries.
+
+Package: python-cloudflare-doc
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Description: Python wrapper for the Cloudflare API v4 (common documentation)
+ python-cloudflare is a Python wrapper providing full access to the CloudFlare
+ v4 API.
+ .
+ This is the common documentation package.

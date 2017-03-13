@@ -1,0 +1,33 @@
+#!/usr/bin/make -f
+# See debhelper(7) (uncomment to enable)
+# output every command that modifies files on the build system.
+#export DH_VERBOSE = 1
+
+export PYBUILD_NAME=cloudflare
+export PYBUILD_DESTDIR_python2=debian/python-cloudflare/
+export PYBUILD_DESTDIR_python3=debian/python3-cloudflare/
+
+# Only install cli4 on Python 3 (the Python 2 path is never used).
+export PYBUILD_INSTALL_ARGS_python2 = --install-scripts=../cli4-python2/usr/bin
+export PYBUILD_INSTALL_ARGS_python3 = --install-scripts=../cli4/usr/bin/
+
+%:
+	dh $@ --with python2,python3 --buildsystem=pybuild
+
+# This get-orig-source rule creates a tarball given the Git URL and commit hash.
+# This looks at the "commithash" portion of the Debian package version, which is
+# in the format majorversion+gitXYZ~commithash-1.
+PACKAGE = $(shell dpkg-parsechangelog --show-field=Source)
+VERSION = $(shell dpkg-parsechangelog --show-field=Version)
+ORIG_VERSION = $(shell echo $(VERSION) | cut -f 1 -d '-')
+COMMIT = $(shell echo $(ORIG_VERSION) | rev | cut -f -1 -d '~' | rev)
+URL = https://github.com/cloudflare/python-cloudflare
+
+get-orig-source:
+	# Cloning upstream repository.
+	git clone $(URL) "$(PACKAGE)-$(ORIG_VERSION)"
+	# Generating archive from commit.
+	cd "$(PACKAGE)-$(ORIG_VERSION)" && git archive -v $(COMMIT) -o \
+	../../$(PACKAGE)_$(ORIG_VERSION).orig.tar.gz
+	# Removing temporary Git tree.
+	rm -rf "$(PACKAGE)-$(ORIG_VERSION)"
