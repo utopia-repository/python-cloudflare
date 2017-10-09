@@ -2,6 +2,7 @@ python-cloudflare (1.8.0-0utopia1) unstable; urgency=low
 
   * New upstream release.
   * Drop remove-logger-dependency.patch, superseded by upstream changes.
+  * Bump Standards-Version to 4.1.1, no changes needed.
 
  -- James Lu <bitflip3@gmail.com>  Mon, 09 Oct 2017 01:04:41 -0700
 
