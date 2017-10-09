@@ -1,3 +1,10 @@
+python-cloudflare (1.8.0-0utopia1) unstable; urgency=low
+
+  * New upstream release.
+  * Drop remove-logger-dependency.patch, superseded by upstream changes.
+
+ -- James Lu <bitflip3@gmail.com>  Mon, 09 Oct 2017 01:04:41 -0700
+
 python-cloudflare (1.5.1~git20161230~c1c5096-0utopia1) unstable; urgency=low
 
   * Initial Utopia Repository release.
