@@ -1,5 +1,52 @@
 # Change Log
 
+ - 2017-09-27 15:12:36 -0700 [522595b](https://github.com/cloudflare/python-cloudflare/commit/522595bc8cadf85b74b354a54951d0342311b45f) 1.8.0 release
+ - 2017-09-27 15:02:40 -0700 [3358773](https://github.com/cloudflare/python-cloudflare/commit/3358773568ba1454bd0b423960ec2e290e7a270f) Cloudflare CA CLI examples added
+ - 2017-09-27 15:01:03 -0700 [3731c06](https://github.com/cloudflare/python-cloudflare/commit/3731c0600fd3b09131cde9d4d565a1d537fd0187) needed to handle files= paramater for all POST calls
+ - 2017-09-12 00:16:44 -0700 [593b06b](https://github.com/cloudflare/python-cloudflare/commit/593b06b4be3f4463b0bb1a93696189216b074d22) CHANGELOG.md pushed to github
+ - 2017-09-12 00:16:18 -0700 [49f428e](https://github.com/cloudflare/python-cloudflare/commit/49f428e52ed0f1ea8845b7fa241d8044bea7d776) 1.7.5 release
+ - 2017-09-11 08:30:00 -0700 [dfe0afb](https://github.com/cloudflare/python-cloudflare/commit/dfe0afbec237c3f217f63ea8a92990eecb43a437) added more API commands. Made some efficency edits to the python code
+ - 2017-08-30 10:37:45 -0700 [06b4c6b](https://github.com/cloudflare/python-cloudflare/commit/06b4c6b9c1adf0ce7520762ecf46b013c4d840da) added example python code for dns_records/export
+ - 2017-08-27 18:44:04 -0700 [b596a90](https://github.com/cloudflare/python-cloudflare/commit/b596a903600e2d20dee4435e90b18933615ecbe2) typo
+ - 2017-08-27 11:53:56 -0700 [61a13eb](https://github.com/cloudflare/python-cloudflare/commit/61a13eb6888d1ef4eab57f9d4025e35606865e91) CHANGELOG.md pushed to github
+ - 2017-08-27 11:53:43 -0700 [671758e](https://github.com/cloudflare/python-cloudflare/commit/671758e07830be2f9f1f70af393b92ba5e4ed46e) 1.7.4 release
+ - 2017-08-27 11:52:19 -0700 [510a4b6](https://github.com/cloudflare/python-cloudflare/commit/510a4b65fee4d22513474d28698e8f4359c6c335) added /zones/amp & /zones/dns_analytics API calls
+ - 2017-08-27 11:03:58 -0700 [a56ab78](https://github.com/cloudflare/python-cloudflare/commit/a56ab782de87d2fe9c94218b239c2bda0ac477be) CHANGELOG.md pushed to github
+ - 2017-08-27 11:03:46 -0700 [6d5952c](https://github.com/cloudflare/python-cloudflare/commit/6d5952cbda642328c06b3c71b87214aa9ecc5304) 1.7.3 release
+ - 2017-08-27 11:03:18 -0700 [434efb8](https://github.com/cloudflare/python-cloudflare/commit/434efb8f7d716e3c968b62db09fa8a7147787ac9) added dns_records/export documentation
+ - 2017-08-27 10:48:34 -0700 [9a35d4f](https://github.com/cloudflare/python-cloudflare/commit/9a35d4f5180d40d6754e9dcf203feb188d0fc24b) CHANGELOG.md pushed to github
+ - 2017-08-27 10:48:19 -0700 [c1bb920](https://github.com/cloudflare/python-cloudflare/commit/c1bb920a10b4ea017ef0c9b40896d30e49f5ed19) 1.7.2 release
+ - 2017-08-27 10:47:41 -0700 [680d5b9](https://github.com/cloudflare/python-cloudflare/commit/680d5b9f6a805625be1ce8b50c8ab9ebb4e25d22) added dns_records/export API endpoint hence added code to handle non-JSON responses. added some initial http error code processing
+ - 2017-08-27 09:28:57 -0700 [77a69b7](https://github.com/cloudflare/python-cloudflare/commit/77a69b72c76edd0cc76dde717ca85b1924ae17a9) CHANGELOG.md pushed to github
+ - 2017-08-27 09:28:31 -0700 [d443410](https://github.com/cloudflare/python-cloudflare/commit/d4434106da68ef1828caaf49e8a25c442bb2dba2) 1.7.1 release
+ - 2017-08-26 23:54:06 -0700 [a86700a](https://github.com/cloudflare/python-cloudflare/commit/a86700af42da5efe49ae9d6178aeec315a373150) typo
+ - 2017-08-26 23:49:40 -0700 [684b001](https://github.com/cloudflare/python-cloudflare/commit/684b001baa6fb772bc55ca59be3d24f0766eabc5) CHANGELOG.md pushed to github
+ - 2017-08-26 23:49:08 -0700 [de7bbee](https://github.com/cloudflare/python-cloudflare/commit/de7bbee0a048f300eec39cdf00f129b17e5df7d3) 1.7.0 release
+ - 2017-08-26 23:47:04 -0700 [ee52cb3](https://github.com/cloudflare/python-cloudflare/commit/ee52cb33f95502e4b2df861cc5201f3a537137ba) tags added and some general cleanup
+ - 2017-08-26 23:46:13 -0700 [d400c56](https://github.com/cloudflare/python-cloudflare/commit/d400c565cb1a29440a45319e7feca2a93b081c90) support for dns_records/import and file upload via library and cli4 command
+ - 2017-08-23 02:59:08 -0700 [412ced6](https://github.com/cloudflare/python-cloudflare/commit/412ced60ccefb3c38302d7e431c78512a27f4290) CHANGELOG.md pushed to github
+ - 2017-08-23 02:58:51 -0700 [b1481fa](https://github.com/cloudflare/python-cloudflare/commit/b1481fa3cbf08d7a5b054c4488cda1e8357611c1) 1.6.2 release
+ - 2017-08-23 02:57:48 -0700 [16129a3](https://github.com/cloudflare/python-cloudflare/commit/16129a394cdc43e07e67cea9b6c14358311f66f4) removed requirement for logger package as its not used. changed Logger class  to CFlogger to remove confusion - issues/30
+ - 2017-08-23 02:25:51 -0700 [90e3ea5](https://github.com/cloudflare/python-cloudflare/commit/90e3ea57e473b2cf332b7cc5ed22d5bf66ffe36a) added a delete dns record example - issues/33
+ - 2017-08-22 05:10:15 -0700 [3fc396c](https://github.com/cloudflare/python-cloudflare/commit/3fc396cb685bf57ce094299a7505216d78624ac2) missing chmod +x on examples/example_paging_thru_zones.py
+ - 2017-08-22 05:09:21 -0700 [1e13e8d](https://github.com/cloudflare/python-cloudflare/commit/1e13e8d5cbbe0c37f0a9d563869d51d91858cd50) CHANGELOG.md pushed to github
+ - 2017-08-22 04:51:51 -0700 [3a03516](https://github.com/cloudflare/python-cloudflare/commit/3a035163d3613756e8bb3e4bc26fb3642091861c) CHANGELOG.md pushed to github
+ - 2017-08-22 04:51:16 -0700 [cae98bb](https://github.com/cloudflare/python-cloudflare/commit/cae98bba8564d95a64ac6aa293805b1e587db2c6) 1.6.0 release
+ - 2017-08-22 04:39:52 -0700 [4745e20](https://github.com/cloudflare/python-cloudflare/commit/4745e20cc337d7d22a4c87ccc58a21961415a603) Merge pull request #35 from Bellardia/implement-argo
+ - 2017-08-22 04:37:06 -0700 [b07a3c9](https://github.com/cloudflare/python-cloudflare/commit/b07a3c99650b8a566116ff7ab68ba6860f4361fb) Merge pull request #34 from Bellardia/Bellardia-patch-1
+ - 2017-08-22 03:58:09 -0700 [fb12f30](https://github.com/cloudflare/python-cloudflare/commit/fb12f3000824051d34008a2c63e9eabce0822edc) fixed paging examples, as per pull request #28 & #29
+ - 2017-08-22 03:48:11 -0700 [152c9a1](https://github.com/cloudflare/python-cloudflare/commit/152c9a1fcdd447eca9aa6a5ef358aad1ac5307e1) Merge pull request #29 from crlorentzen/patch-1
+ - 2017-08-22 03:47:04 -0700 [9926050](https://github.com/cloudflare/python-cloudflare/commit/9926050443a81c821d93454c1745f420e1c2247c) Merge pull request #28 from crlorentzen/patch-2
+ - 2017-08-16 00:04:24 -0400 [d8d15c7](https://github.com/cloudflare/python-cloudflare/commit/d8d15c7163b19cec0859f4247de9c212d1bfecef) Add support for Argo
+ - 2017-08-15 11:03:51 -0400 [182a770](https://github.com/cloudflare/python-cloudflare/commit/182a7705d66ee8e9275066a703c734238eba59d3) Add support for organizational monitors and pools
+ - 2017-01-25 13:09:31 -0500 [6c86fef](https://github.com/cloudflare/python-cloudflare/commit/6c86fef75e01a2b8c1a92925cec3ac0dbac19bd6) Fixed pagination of raw example, same as c842b04
+ - 2017-01-25 13:05:46 -0500 [c842b04](https://github.com/cloudflare/python-cloudflare/commit/c842b04473627a22788d9e8bfac8729f72f504c9) Fix Pagination in example raw code
+ - 2016-12-30 10:34:40 -0800 [5358208](https://github.com/cloudflare/python-cloudflare/commit/5358208360c891cdabb954ba85c8ea269891a350) CHANGELOG.md pushed to github
+ - 2016-12-30 10:34:09 -0800 [f0a4fea](https://github.com/cloudflare/python-cloudflare/commit/f0a4fea03901b6547b861613769c758c439580dd) added reference to blog for historic reasons
+ - 2016-12-30 10:27:17 -0800 [c1c5096](https://github.com/cloudflare/python-cloudflare/commit/c1c5096e4c8e20609638dfde9b662be9c70c9c7b) 1.5.1 release
+ - 2016-12-30 10:27:06 -0800 [abf116c](https://github.com/cloudflare/python-cloudflare/commit/abf116c5f58a5e32ce7878bd7fc6ba6ccd2d4bba) added opportunistic_encryption, opportunistic_encryption, subscriptions API calls
+ - 2016-12-30 08:32:30 -0800 [37ddc7e](https://github.com/cloudflare/python-cloudflare/commit/37ddc7eea035b5629d5ec7e09ea6020c4c5520ff) removed import CloudFlare.exceptions from examples - as per @yesbox edits for python3
+ - 2016-12-30 08:18:51 -0800 [08aafa4](https://github.com/cloudflare/python-cloudflare/commit/08aafa4dc46fc3768ab046092bad6771691aa621) CHANGELOG.md pushed to github
  - 2016-12-30 08:18:19 -0800 [dba1257](https://github.com/cloudflare/python-cloudflare/commit/dba1257bd75196d4811ab3051c4c3a1519f42271) 1.5.0 release
  - 2016-12-30 08:13:26 -0800 [f82c055](https://github.com/cloudflare/python-cloudflare/commit/f82c055147250b15cf6378ffa17ba9c803e7ad92) Merge branch 'yesbox-refactor_imports'
  - 2016-12-30 16:18:13 +0100 [c013305](https://github.com/cloudflare/python-cloudflare/commit/c0133052de575c2e277d51643b8c8d39bbf96fe3) Refactor imports
