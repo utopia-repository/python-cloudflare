@@ -33,7 +33,7 @@ Description: Python wrapper for the Cloudflare API v4 (Python 3)
 
 Package: cli4
 Architecture: all
-Depends: ${python3:Depends}, ${misc:Depends}, python3, python3-cloudflare
+Depends: ${python3:Depends}, ${misc:Depends}, python3, python3-cloudflare (= ${source:Version})
 Description: Command line frontend to the Cloudflare API v4 (Python 3)
  cli4 is a command line frontend to python-cloudflare, providing full access
  to the CloudFlare v4 API.
