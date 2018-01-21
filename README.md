@@ -714,7 +714,7 @@ $
 The following is documented within the **Advanced** option of the DNS page within the Cloudflare portal.
 
 ```
-$ python -m cli4 /zones/:example.com/dns_records/export | jq -r . | egrep -v '^;;|^$'
+$ python -m cli4 /zones/:example.com/dns_records/export | egrep -v '^;;|^$'
 $ORIGIN .
 @	3600	IN	SOA	example.com.	root.example.com.	(
 		2025552311	; serial
@@ -730,7 +730,7 @@ record2.example.com.	300	IN	AAAA	2001:d8b::2
 $
 ```
 
-The **jq -r** option is used to convert newlines and tabs within the JSON response data. The egrep is used for documentation brevity.
+The egrep is used for documentation brevity.
 
 This can also be done via Python code with the following example.
 ```
@@ -877,7 +877,7 @@ The solution can be found [here](https://urllib3.readthedocs.org/en/latest/secur
 
 ## Python 2.x vs 3.x support
 
-As of May/June 2016 the code is now tested againt pylint.
+As of May/June 2016 the code is now tested against pylint.
 This was required in order to move the codebase into Python 3.x.
 The motivation for this came from [Danielle Madeley (danni)](https://github.com/danni).
 
